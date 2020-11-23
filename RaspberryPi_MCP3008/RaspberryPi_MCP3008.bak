@@ -1,0 +1,296 @@
+EESchema Schematic File Version 4
+LIBS:RaspberryPi-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Template"
+Date "December 13, 2018"
+Rev "1.0"
+Comp "Woolsey Workshop"
+Comment1 "By: John Woolsey"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR01
+U 1 1 580C1B61
+P 3350 1400
+F 0 "#PWR01" H 3350 1250 50  0001 C CNN
+F 1 "+5V" H 3350 1540 50  0000 C CNN
+F 2 "" H 3350 1400 50  0000 C CNN
+F 3 "" H 3350 1400 50  0000 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1550
+Wire Wire Line
+	3350 1550 3150 1550
+Wire Wire Line
+	3350 1650 3150 1650
+Connection ~ 3350 1550
+$Comp
+L power:GND #PWR02
+U 1 1 580C1D11
+P 3250 3600
+F 0 "#PWR02" H 3250 3350 50  0001 C CNN
+F 1 "GND" H 3250 3450 50  0000 C CNN
+F 2 "" H 3250 3600 50  0000 C CNN
+F 3 "" H 3250 3600 50  0000 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1750 3250 2150
+Wire Wire Line
+	3250 3150 3150 3150
+Wire Wire Line
+	3250 2950 3150 2950
+Connection ~ 3250 3150
+Wire Wire Line
+	3250 2450 3150 2450
+Connection ~ 3250 2950
+Wire Wire Line
+	3250 2150 3150 2150
+Connection ~ 3250 2450
+$Comp
+L power:GND #PWR03
+U 1 1 580C1E01
+P 2550 3600
+F 0 "#PWR03" H 2550 3350 50  0001 C CNN
+F 1 "GND" H 2550 3450 50  0000 C CNN
+F 2 "" H 2550 3600 50  0000 C CNN
+F 3 "" H 2550 3600 50  0000 C CNN
+	1    2550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3450 2650 3450
+Wire Wire Line
+	2550 1950 2550 2750
+Wire Wire Line
+	2550 2750 2650 2750
+Connection ~ 2550 3450
+Connection ~ 2450 1550
+Wire Wire Line
+	2450 2350 2650 2350
+Wire Wire Line
+	2450 1550 2650 1550
+Wire Wire Line
+	2450 1400 2450 1550
+$Comp
+L power:+3.3V #PWR04
+U 1 1 580C1BC1
+P 2450 1400
+F 0 "#PWR04" H 2450 1250 50  0001 C CNN
+F 1 "+3.3V" H 2450 1540 50  0000 C CNN
+F 2 "" H 2450 1400 50  0000 C CNN
+F 3 "" H 2450 1400 50  0000 C CNN
+	1    2450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1950 2650 1950
+Connection ~ 2550 2750
+Wire Wire Line
+	2650 1650 1500 1650
+Wire Wire Line
+	1500 1750 2650 1750
+Wire Wire Line
+	1500 1850 2650 1850
+Wire Wire Line
+	2650 2050 1500 2050
+Wire Wire Line
+	1500 2150 2650 2150
+Wire Wire Line
+	1500 2250 2650 2250
+Wire Wire Line
+	2650 2450 1500 2450
+Wire Wire Line
+	1500 2550 2650 2550
+Wire Wire Line
+	1500 2650 2650 2650
+Wire Wire Line
+	2650 2850 1500 2850
+Wire Wire Line
+	1500 2950 2650 2950
+Wire Wire Line
+	1500 3050 2650 3050
+Wire Wire Line
+	2650 3150 1500 3150
+Wire Wire Line
+	1500 3250 2650 3250
+Wire Wire Line
+	1500 3350 2650 3350
+Wire Wire Line
+	3150 3250 4200 3250
+Wire Wire Line
+	3150 3350 4200 3350
+Wire Wire Line
+	3150 2750 4200 2750
+Wire Wire Line
+	3150 2850 4200 2850
+Wire Wire Line
+	3150 2550 4200 2550
+Wire Wire Line
+	3150 2650 4200 2650
+Wire Wire Line
+	3150 2250 4200 2250
+Wire Wire Line
+	3150 2350 4200 2350
+Wire Wire Line
+	3150 1950 4200 1950
+Wire Wire Line
+	3150 2050 4200 2050
+Wire Wire Line
+	3150 1850 4200 1850
+Wire Wire Line
+	3150 3050 4200 3050
+Text Label 1500 1650 0    50   ~ 0
+GPIO2(I2C1_SDA)
+Text Label 1500 1750 0    50   ~ 0
+GPIO3(I2C1_SCL)
+Text Label 1500 1850 0    50   ~ 0
+GPIO4
+Text Label 1500 2050 0    50   ~ 0
+GPIO17(SPI1_CE1)
+Text Label 1500 2150 0    50   ~ 0
+GPIO27
+Text Label 1500 2250 0    50   ~ 0
+GPIO22
+Text Label 1500 2450 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 1500 2550 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 1500 2650 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 1500 2850 0    50   ~ 0
+ID_SD
+Text Label 1500 2950 0    50   ~ 0
+GPIO5
+Text Label 1500 3050 0    50   ~ 0
+GPIO6
+Text Label 1500 3150 0    50   ~ 0
+GPIO13(PWM1)
+Text Label 1500 3250 0    50   ~ 0
+GPIO19(SPI1_MISO,PWM1)
+Text Label 1500 3350 0    50   ~ 0
+GPIO26
+Text Label 4200 3350 2    50   ~ 0
+GPIO20(SPI1_MOSI)
+Text Label 4200 3250 2    50   ~ 0
+GPIO16(SPI1_CE2)
+Text Label 4200 3050 2    50   ~ 0
+GPIO12(PWM0)
+Text Label 4200 2850 2    50   ~ 0
+ID_SC
+Text Label 4200 2750 2    50   ~ 0
+GPIO7(SPI0_CE1)
+Text Label 4200 2650 2    50   ~ 0
+GPIO8(SPI0_CE0)
+Text Label 4200 2550 2    50   ~ 0
+GPIO25
+Text Label 4200 2350 2    50   ~ 0
+GPIO24
+Text Label 4200 2250 2    50   ~ 0
+GPIO23
+Text Label 4200 2050 2    50   ~ 0
+GPIO18(SPI1_CE0,PWM0)
+Text Label 4200 1950 2    50   ~ 0
+GPIO15(RX)
+Text Label 4200 1850 2    50   ~ 0
+GPIO14(TX)
+Wire Wire Line
+	3250 1750 3150 1750
+Connection ~ 3250 2150
+$Comp
+L RaspberryPi-rescue:Mounting_Hole-Mechanical MK1
+U 1 1 5834FB2E
+P 650 7650
+F 0 "MK1" H 750 7696 50  0000 L CNN
+F 1 "M2.5" H 750 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 650 7650 60  0001 C CNN
+F 3 "" H 650 7650 60  0001 C CNN
+	1    650  7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi-rescue:Mounting_Hole-Mechanical MK3
+U 1 1 5834FBEF
+P 1100 7650
+F 0 "MK3" H 1200 7696 50  0000 L CNN
+F 1 "M2.5" H 1200 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 7650 60  0001 C CNN
+F 3 "" H 1100 7650 60  0001 C CNN
+	1    1100 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi-rescue:Mounting_Hole-Mechanical MK2
+U 1 1 5834FC19
+P 650 7850
+F 0 "MK2" H 750 7896 50  0000 L CNN
+F 1 "M2.5" H 750 7805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 650 7850 60  0001 C CNN
+F 3 "" H 650 7850 60  0001 C CNN
+	1    650  7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi-rescue:Mounting_Hole-Mechanical MK4
+U 1 1 5834FC4F
+P 1100 7850
+F 0 "MK4" H 1200 7896 50  0000 L CNN
+F 1 "M2.5" H 1200 7805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 7850 60  0001 C CNN
+F 3 "" H 1100 7850 60  0001 C CNN
+	1    1100 7850
+	1    0    0    -1  
+$EndComp
+Text Notes 650  7500 0    50   ~ 0
+Raspberry Pi\nMounting Holes
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 2850 2450
+F 0 "P1" H 2900 3567 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 2900 3476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2000 1500 50  0001 C CNN
+F 3 "" H -2000 1500 50  0001 C CNN
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3450 4200 3450
+Text Label 4200 3450 2    50   ~ 0
+GPIO21(SPI1_SCK)
+Wire Wire Line
+	3350 1550 3350 1650
+Wire Wire Line
+	3250 3150 3250 3600
+Wire Wire Line
+	3250 2950 3250 3150
+Wire Wire Line
+	3250 2450 3250 2950
+Wire Wire Line
+	2550 3450 2550 3600
+Wire Wire Line
+	2450 1550 2450 2350
+Wire Wire Line
+	2550 2750 2550 3450
+Wire Wire Line
+	3250 2150 3250 2450
+Text Notes 2400 1100 0    100  ~ 0
+Raspberry Pi
+Wire Notes Line
+	4300 900  4300 3900
+Wire Notes Line
+	4300 3900 1400 3900
+Wire Notes Line
+	1400 3900 1400 900 
+Wire Notes Line
+	1400 900  4300 900 
+$EndSCHEMATC
